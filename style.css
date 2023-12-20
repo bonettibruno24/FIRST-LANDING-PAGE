@@ -64,35 +64,154 @@ html {
     line-height: 100%;
     /* 18px */
 }
-
-.navbar .navbar__buttons {
-    display: inline-flex;
-    gap: 29px;
-}
-
-/* Botões de loguin e submit */
-.btn {
-    padding: 16px 38px;
-    border-radius: 12px;
+.navbar__buttons{
+    display:flex;
+    gap: 10px;
     font-weight: 700;
+    width: 285px;
+    height: 45px;
+    
+    
+}
+.button {
+    display: flex;
+    width: 170px;
     font-size: 13px;
-
-    border-radius: 10px;
-}
-
-.btn.btn-login {
-    border: 2px solid #04869F;
-    background: rgba(14, 25, 31, 0.70);
+    border: none;
     color: #01C3CF;
-}
+    text-align: center;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    align-items: center;
+    padding-left: 23px;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 75%;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(8, 77, 126, 0) 0%, rgba(8, 77, 126, 0.42) 100%),rgba(47,255,255,.24);
+    box-shadow: inset 1px 1px 10px 0px rgba(151,200,255,.44);
+    z-index: -1;
+    border: 1px solid #04869F;
 
-.btn.btn-subscribe {
-    border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.47);
-    color: #FFFFFF;
-    background: rgba(0, 239, 249, 0.60);
-}
+  }
+  
+  .button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 76%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(8, 77, 126, 0) 0%, rgba(8, 77, 126, 0.42) 100%),rgba(47,255,255,.24);
+    box-shadow: inset 4px 4px 0px rgba(151,200,255,.44);
+    border-radius: .5rem;
+    opacity: 0;
+    z-index: -1;
+    transition: all .3s ease-in;
+  }
+  
+  .button:hover::after {
+    opacity: 1;
+  }
+  
+  .button-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    z-index: -1;
+  }
+  
+  .button-border::before {
+    content: "";
+    position: absolute;
+    border-radius: .5rem;
+    padding: 1px;
+    background: linear-gradient(180deg, rgba(184, 238, 255, 0.24) 0%, rgba(184, 238, 255, 0) 100%),linear-gradient(0deg, rgba(184, 238, 255, 0.32), rgba(184, 238, 255, 0.32));
+    mask: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    pointer-events: none;
+  }
 
+
+  .button__login {
+    width: 30%;
+    display: flex;
+    font-size: 13px;
+    border: none;
+    color: #01C3CF;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    align-items: center;
+    padding-left: 25px;
+  }
+  
+  .button__login::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: inset 1px 1px 10px 0px rgba(151,200,255,.44);
+    z-index: -1;
+    border: 1px solid #04869F;
+
+  }
+  
+  .button__login::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(8, 77, 126, 0) 0%, rgba(8, 77, 126, 0.42) 100%),rgba(47,255,255,.24);
+    box-shadow: inset 4px 4px 0px rgba(151,200,255,.44);
+    border-radius: .5rem;
+    opacity: 0;
+    z-index: -1;
+    transition: all .3s ease-in;
+  }
+  
+  .button__login:hover::after {
+    opacity: 1;
+  }
+  
+  .button-border-lg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    z-index: -1;
+  }
+  
+  .button-border-lg::before {
+    content: "";
+    position: absolute;
+    border-radius: .5rem;
+    padding: 1px;
+    background: linear-gradient(180deg, rgba(184, 238, 255, 0.24) 0%, rgba(184, 238, 255, 0) 100%),linear-gradient(0deg, rgba(184, 238, 255, 0.32), rgba(184, 238, 255, 0.32));
+    mask: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    pointer-events: none;
+  }
 /* Titulo e parágrafo  */
 .header {
     display: flex;
@@ -403,4 +522,10 @@ html {
     height: 25%;
     padding: 0 20px;
   }
+
+
+
+  
+
+  
   
