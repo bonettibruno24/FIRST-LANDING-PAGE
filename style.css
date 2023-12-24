@@ -95,7 +95,7 @@ html {
     width: 75%;
     border-radius: 0.5rem;
     background: linear-gradient(180deg, rgba(8, 77, 126, 0) 0%, rgba(8, 77, 126, 0.42) 100%),rgba(47,255,255,.24);
-    box-shadow: inset 1px 1px 10px 0px rgba(151,200,255,.44);
+    box-shadow: inset 2px 0px 10px 0px rgba(151,200,255,.44);
     z-index: -1;
     border: 1px solid #04869F;
 
@@ -360,7 +360,6 @@ html {
 .blur__grid{
     display: grid;
     position: absolute;
-    right: 400px;
     right: -455px;
     top: -363px;
 } 
@@ -522,6 +521,33 @@ html {
     height: 25%;
     padding: 0 20px;
   }
+.dashboard{
+  margin-left: 120px;
+  display: flex;
+  grid-template-rows: 50%;
+  align-items: center;
+  position: absolute;
+  margin-top: 361px;
+}
+.container__midia{
+  display: grid;
+  position: relative;
+}
+.container__pc{
+  display: grid;
+  left: 50vh;
+}
+.container__cel{
+  display: grid;
+  position: absolute;
+  justify-content: end;
+  align-items: center;
+  left: 630px;
+  top: 170px;
+}
+
+
+  
 
 
 
