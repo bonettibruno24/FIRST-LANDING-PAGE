@@ -490,11 +490,6 @@ html {
     height: 170px;
     padding-top: 4vh;
 }
-/* .icons__fmk{
-    width: 60%;
-    height: 60%;
-    
-}  */
 
  /* @media screen  {
     
@@ -545,6 +540,145 @@ html {
   left: 630px;
   top: 170px;
 }
+.informations{
+  margin-top: 145vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.info__container{
+  display: grid;
+  position: relative;
+}
+.container__inf{
+  display: grid;
+  position: absolute;
+  width: 333px;
+  height: 40px;
+  margin-left: 157px;
+  margin-top: 60px;
+}
+.info_-title{
+
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin-top: 10px;
+  
+  background: linear-gradient(120deg, #18C8FF 41.64%, #933FFE 62.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.line__inf{
+  border: 0;
+  height: 1px;
+  width: 899px;
+  background-image: linear-gradient(to right, rgba(24, 200, 255, 1), rgba(147, 84, 254, 1));
+  margin-top: 35px;
+  margin-left: -45px;
+}
+.ask__inf{
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 60px;
+  } 
+  .containers__data{
+    align-items: center;
+    display: grid;
+    position: relative;
+    margin-top: 43px;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    left: -30px;
+    gap: 13px;
+    width: 860px;
+
+  }
+  #first__name{
+    width: 430px;
+    height: 55px;
+    border: 1px solid #FFF;
+    border-radius: 25px 5px 3px 0px;
+    justify-content: start;
+    align-items: center;
+
+
+    background-color: transparent;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #sec__name{
+    border-radius: 0px 27px 0px 3px;
+    border: 1px solid #FFF;
+    height: 55px;
+    width: 430px;
+    left: -15px;
+    justify-content: start;
+    align-items: center;
+
+    background-color: transparent;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #data__user{
+    width: 430px;
+    height: 55px;
+    border-radius: 0px 3px 3px 0px;
+    border: 1px solid #FFF;
+    justify-content: start;
+
+    background-color: transparent;
+  }
+#subject__user{
+  width: 874px;
+  height: 55px;
+  border: 1px solid #FFF;
+  border-radius: 0px 2px 27px 27px;
+  background-color: transparent;
+}
+#msg__user{
+  width: 873px;
+  height: 166px;
+  position: absolute;
+  border-radius: 30px;
+  margin-left: -6px;
+  margin-top: 525px;
+
+  background-color: transparent;
+  border: 1px solid #FFF;
+}
+input::placeholder{
+font-style: normal;
+color: #FFF;
+
+font-family: 'Montserrat';
+font-size: 14px;
+font-weight: 400;
+}
+input {
+  color: #FFFF;
+  padding: 10px;
+}
+
+
 
 
   
