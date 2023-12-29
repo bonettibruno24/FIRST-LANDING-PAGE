@@ -17,7 +17,7 @@
 body {
     /* background-color: rgba(0, 0, 0, 1); */
     font-family: 'Montserrat', sans-serif;
-    background-image: url(images/Landing\ Page3.svg);
+    background-image: url(images/Body-Landing.svg);
     background-size: 100%;
     /* background-repeat: inherit; */
     overflow: hidden;
@@ -388,9 +388,9 @@ html {
     border-image: 1px solid var( rgba(255, 255, 255, 0.47));
     background: linear-gradient(
     55deg,
-        #18C8FF 3.58%,
-        #AF2DDA 71.16%,
-        #933FFE 183.06%);
+      #18C8FF 3.58%,
+      #AF2DDA 71.16%,
+      #933FFE 183.06%);
     color: #FFFFFF;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -421,7 +421,7 @@ html {
         height: 45px;
         border: none;
         background-size: 150% 130%;
-        border-radius: 10px;
+        border-radius: 25px;
         -moz-transition: all .4s ease-in-out;
         -o-transition: all .4s ease-in-out;
         -webkit-transition: all .4s ease-in-out;
@@ -676,10 +676,74 @@ font-weight: 400;
 input {
   color: #FFFF;
   padding: 10px;
+  background-color: #1A1B23;
+}
+.button__send{
+  display: flex;
+  margin: 379px;
+  margin-left: 350px;
+}
+/* input[type="text"]:focus, input[type="email"]:-webkit-autofill {
+color: #292B38;
+} */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #1A1B23 inset;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
 }
 
 
 
+.footer__web{
+  display: flex;
+  justify-content: center;
+  margin-top: 53rem;
+
+}
+
+.container__svg{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 29px;
+  position: relative;
+  left: 57rem;
+}
+.line__white{
+  margin-top: 60px;
+  border: 0;
+  position: absolute;
+  height: 1px;
+  width: 1350px;
+  right: 12rem;
+  background: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)85%);
+}
+.container__logo{
+  display: grid;
+  position: relative;
+  margin-top: 82px;
+  right: 31rem;
+  align-items: center;
+grid-template-columns: 18% 80% 20% 25% 16%;}
+.copy__auth{
+  color: #FFF;
+
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  opacity: 0.5;
+}
+.terms__grid{
+  color: #FFF;
+
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  opacity: 0.5;
+}
 
   
 
