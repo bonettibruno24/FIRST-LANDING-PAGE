@@ -6,23 +6,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    
     border: 0;
     outline: 0;
     font: inherit;
     vertical-align: baseline;
     text-decoration: none;
-}
-
-body {
+  }
+  
+  body {
     /* background-color: rgba(0, 0, 0, 1); */
     font-family: 'Montserrat', sans-serif;
-    background-image: url(images/Body-Landing.svg);
+    background-image: url(images/Stars-Body.svg);
     background-size: 100%;
-    /* background-repeat: inherit; */
+    background-color: black;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+  
+    background-repeat: no-repeat;
     overflow: hidden;
-
-}
+  }
+  @media screen and (max-width: 768px){
+ 
+  }
 
 ul {
     display: flex;
@@ -271,9 +278,35 @@ html {
     width: 100%;
 
 }
+.container__blurs{
+    display: grid;
+    background: transparent;
+    position: absolute;
+    margin: 214px;
+    margin-top: 47vh;
+  
+}
+#circle__blurP{
+  width: 1100px;
+  height: 749px;
+  filter: blur(175px);
+  margin-left: 300px;
+
+  background: linear-gradient(180deg, rgba(0, 194, 255, 0.00) 0%, #FF29C3 100%);
+}
+#circle__blurB{
+    left: -30vh;
+    width: 1130px;
+    height: 807px;
+    border-radius: 956px;
+    position: absolute;
+    filter: blur(175px);
+
+    background: linear-gradient(180deg, rgba(0, 194, 255, 0.00) 0%, rgba(23, 200, 255, 0.94) 93.75%, #FF29C3 100%);
+}
 
 .container {
-    display: flex;
+    position: relative;
     width: 69, 875rem;
     height: 37, 9375rem;
     /* width: 1118px;
@@ -283,7 +316,6 @@ html {
     text-align: center;
     border-radius: 24px;
     flex-direction: column;
-    margin-top: px;
 
 }
 
@@ -491,7 +523,7 @@ html {
     padding-top: 4vh;
 }
 
- /* @media screen  {
+ /* @media screen and (max-width: 100px){
     
 } */
 
@@ -507,12 +539,12 @@ html {
     align-items: center;
   }
   .swiper-wrapper{
-      display: flex;
-      flex-direction: row;
-      padding-top: 12vh;
+    padding-top: 100px;
+    flex-direction: row;
+      /* padding-top: 12vh; */
     }
     .icons__fmk{
-    width: 150px ;
+    width: 150px;
     height: 25%;
     padding: 0 20px;
   }
@@ -705,9 +737,7 @@ input {
   margin: 379px;
   margin-left: 350px;
 }
-/* input[type="text"]:focus, input[type="email"]:-webkit-autofill {
-color: #292B38;
-} */
+
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px #1A1B23 inset;
 }
