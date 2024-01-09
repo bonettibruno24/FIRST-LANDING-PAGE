@@ -18,7 +18,6 @@
     /* background-color: rgba(0, 0, 0, 1); */
     font-family: 'Montserrat', sans-serif;
     background-image: url(images/Stars-Body.svg);
-    background-size: 100%;
     background-color: black;
     background-size: contain;
     background-position: center;
@@ -297,7 +296,7 @@ html {
 
 .container__title {
     background: linear-gradient(120deg, #18C8FF 40.64%, #933FFE 57.93%);
-    font-family: 'MOntserrat';
+    font-family: 'Montserrat';
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -512,14 +511,14 @@ html {
   
 .container__sun{
   display: grid;
-  position: relative;
-  justify-items: center;
+  position: absolute;
+  margin-top: -1186px;
+  margin-left: 1260px;
   align-items: center;
-  top: 1510px;
-  left: 650px;
+  justify-items: center;
 }
 #sun__orange{
-  position: absolute;
+  position: relative;
   width: 111.981px;
   height: 111.942px;
   transform: rotate(-60.004deg);
@@ -545,24 +544,24 @@ html {
   margin-top: -160px;
   grid-template-columns: 50% 50%;
   grid-gap: 715px;
-
 }
+
 #blur__carrosselL{
-  width: 286.366px;
-  height: 406.247px;
+  width: 380.366px;
+  height: 500.247px;
   position: relative;
+  filter: blur(127px);
+
   background: linear-gradient(180deg, rgba(24, 255, 158, 0.00) 0%, #17FFE3 100%);
-  filter: blur(100px);
 }
 #blur__carrosselR{
-  width: 286.366px;
-  height: 406.247px;
+  width: 380.366px;
+  height: 500.247px;
   position: relative;
+  filter: blur(127px);
+  
   background: linear-gradient(180deg, rgba(24, 255, 158, 0.00) 0%, #17FFE3 100%);
-  filter: blur(100px);
 }
-
-
 .carrossel__icons{
     display: flex;
     flex-direction:row;
@@ -612,30 +611,101 @@ html {
     height: 25%;
     padding: 0 20px;
   }
-.dashboard{
-  margin-left: 120px;
+/* .dashboard{
   display: flex;
-  grid-template-rows: 50%;
   align-items: center;
-  position: absolute;
-  margin-top: 361px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+} */
+.container__pCel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
-.container__midia{
-  display: grid;
-  position: relative;
-}
+
 .container__pc{
   display: grid;
-  left: 50vh;
-}
-.container__cel{
-  display: grid;
   position: absolute;
-  justify-content: end;
-  align-items: center;
-  left: 630px;
-  top: 170px;
+  margin-top: 1601px;
+  margin-left: 73px;
+
+  grid-template-columns: 35% 33%;
 }
+/* .container__cel{
+  position: relative;
+  right: 260px;
+  top: 200px;
+
+} */
+.spect__cel{
+  position: relative;
+  top: 197px;
+}
+.background__for{
+  display: grid;
+  position: relative;
+  justify-content: center;
+  justify-items: end;
+  align-items: center;
+  top: 678px;
+  left: 141px;
+}
+
+#blur__blue{
+  position: absolute;
+  width: 989px;
+  height: 860px;
+  background: linear-gradient(180deg, rgba(24, 75, 255, 0.00) 0%, #174AFF 100%);
+  filter: blur(100px);
+  right: -61px;
+}
+#blur__white{
+  position: absolute;
+  width: 121px;
+  height: 420px;
+  left: 10px;
+  filter: blur(90px);
+  top: 33px;
+  transform: rotate(338deg);
+  background: linear-gradient(95deg, rgba(24, 75, 255, 0.00) 0%, #FFF 100%);
+  
+}
+
+
+
+#blur__rose{
+  position: absolute;
+  width: 349.764px;
+  height: 385.938px;
+  background: linear-gradient(180deg, rgba(0, 194, 255, 0.00) 0%, #FF29C3 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(0, 194, 255, 0.00) 0%, #FF29C3 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(0, 194, 255, 0.00) 0%, #FF29C3 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(0, 194, 255, 0.00) 0%, #FF29C3 50%) top right / 50% 50% no-repeat;
+  filter: blur(150px);
+  left: -337px;
+  top: -20px;
+  transform: rotate(327deg);
+
+}
+#blur__violet{
+  position: absolute;
+  width: 315px;
+  height: 291px;
+  background: linear-gradient(180deg, rgba(24, 75, 255, 0.00) 0%, #174AFF 100%);
+  filter: blur(80px);
+  top: 227px;
+  left: -76px;
+
+}
+#blur__pink{
+  position: absolute;
+  width: 186.803px;
+  height: 176.099px;
+  filter: blur(175px);
+  background: linear-gradient(to bottom right, rgba(0, 194, 255, 0.00) 0%, #FF29C3 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(0, 194, 255, 0.00) 0%, #FF29C3 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(0, 194, 255, 0.00) 0%, #FF29C3 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(0, 194, 255, 0.00) 0%, #FF29C3 50%) top right / 50% 50% no-repeat;
+  left: 800px;
+}
+
+
 .informations{
   margin-top: 145vh;
   display: flex;
