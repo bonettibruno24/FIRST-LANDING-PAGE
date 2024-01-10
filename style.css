@@ -670,7 +670,7 @@ html {
   top: 33px;
   transform: rotate(338deg);
   background: linear-gradient(95deg, rgba(24, 75, 255, 0.00) 0%, #FFF 100%);
-  
+
 }
 
 
@@ -917,8 +917,8 @@ input:-webkit-autofill {
   margin-top: 65px;
   border: 0;
   position: absolute;
-  height: 1px;
-  width: 1350px;
+  height: 2px;
+  width: 86%;
   right: 12rem;
   background: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)85%);
 }
@@ -960,5 +960,18 @@ input:-webkit-autofill {
 }
 .test__href{
   color: #FFFFFF;
+}
+.boxer__blur{
+  display: grid;
+  position: absolute;
+  width: 110%;
+  height: 500px;
+  margin-top: -208px;
+
+}
+#blur__footer{
+  filter: blur(31px);
+
+  background: linear-gradient(180deg, rgba(24, 75, 255, 0.00) 0%, rgba(23, 74, 255, 0.60) 100%);
 }
  
