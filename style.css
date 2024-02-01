@@ -896,18 +896,15 @@ input:-webkit-autofill {
 }
 
 .container__svg{
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(5, 1fr);
   gap: 29px;
   position: relative;
-  left: 57rem;
-  height: 0;
-  top: 20px;
+  left: 850px;
 }
 .icon__social{
-  transition: all 0.3s;
   max-width: 20px;
-  width: 100%;
+  transition: all 0.3s;
 }
 .icon__social:hover{
   transform: scale(1.2);
@@ -918,8 +915,8 @@ input:-webkit-autofill {
   border: 0;
   position: absolute;
   height: 2px;
-  width: 86%;
-  right: 12rem;
+  width: 92%;
+  right: 5%;
   background: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)85%);
 }
 .container__logo{
@@ -927,10 +924,10 @@ input:-webkit-autofill {
   position: relative;
   margin-top: 82px;
   align-items: center;
-  right: 28rem;
+  right: 20%;
 
   grid-gap: 23px;
-  grid-template-columns: 15% 82% 12% 17% 11%;
+  grid-template-columns: 14% 65% 12% 17% 11%;
 }
 .logotype__web{
   width: 100%;
@@ -974,4 +971,54 @@ input:-webkit-autofill {
 
   background: linear-gradient(180deg, rgba(24, 75, 255, 0.00) 0%, rgba(23, 74, 255, 0.60) 100%);
 }
+/* Responsividade a baixo */
+@media screen and (max-width: 1100px) {
+
+.line__white{
+left: 5%;
+margin-top: 5%;
+}
+.icon__social{
+  max-width: 15px;
+}
+.container__svg{
+  left: 23%;
+  gap: 17px;
+}
+.container__logo{
+  text-align: center;
+  grid-template-columns: auto;
+  grid-gap: 7px;
+  top: -42px;
+}
+.logotype__web{
+  display: grid;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  height: 100%;
+  top: -170%;
+ 
+
+}
+.copy__auth{
+  font-size: 8px;
+  position: relative;
+  top: 87px;
+  
+
+}
+.terms__grid{
+  font-size: 10px;
+}
+#blur__footer{
+  height: 103%;
+  margin-top: -80px;
+}
+
+
+}
+
+
+
  
