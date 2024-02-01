@@ -707,22 +707,25 @@ html {
 
 
 .informations{
-  margin-top: 145vh;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  margin-top:290px
 }
-.info__container{
-  display: grid;
+.container__dp{
+  height: 827px;
+  width: 1067px;
   position: relative;
+
+  background-image: radial-gradient(circle at -70% 320%, #18FFFF 0%, #1A1B23 82%);
+  text-align: center;
+  border-radius: 24px;
+
 }
+
 .container__inf{
-  display: grid;
-  position: absolute;
-  width: 333px;
-  height: 40px;
-  margin-left: 157px;
-  margin-top: 60px;
+
+
 }
 .info_-title{
 
@@ -732,7 +735,7 @@ html {
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
-  margin-top: 10px;
+  margin-top: 60px;
   
   background: linear-gradient(120deg, #18C8FF 41.64%, #933FFE 62.93%);
   background-clip: text;
@@ -752,8 +755,8 @@ html {
   height: 1px;
   width: 899px;
   background-image: linear-gradient(to right, rgba(24, 200, 255, 1), rgba(147, 84, 254, 1));
-  margin-top: 35px;
-  margin-left: -45px;
+  margin: 48px;
+  margin-left: 80px;
 }
 .ask__inf{
   display: flex;
@@ -770,10 +773,9 @@ html {
     align-items: center;
     display: grid;
     position: relative;
-    margin-top: 43px;
+    margin: 9%;
     grid-template-columns: 50% 50%;
     justify-content: center;
-    left: -30px;
     gap: 13px;
     width: 860px;
 
@@ -835,7 +837,7 @@ html {
     position: absolute;
     border-radius: 30px;
     margin-left: -6px;
-    margin-top: 525px;
+    margin-top: 450px;
     padding: 20px 1px 4px 13px;
         
     background-color: transparent;
@@ -876,8 +878,8 @@ input {
 }
 .button__send{
   display: flex;
-  margin: 379px;
-  margin-left: 350px;
+  justify-content: center;
+  margin-top: 300px;
 }
 
 input:-webkit-autofill {
@@ -885,6 +887,13 @@ input:-webkit-autofill {
 }
 input:-webkit-autofill {
   -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+
+.retangle__data{
+  width: 1200px;
+  height: 900px;
+  background-color: #AF2DDA;
+  border-radius: 20%;
 }
 
 
@@ -973,6 +982,7 @@ input:-webkit-autofill {
 }
 /* Responsividade a baixo */
 @media screen and (max-width: 1100px) {
+/* footer */
 
 .line__white{
 left: 5%;
@@ -1015,7 +1025,6 @@ margin-top: 5%;
   height: 103%;
   margin-top: -80px;
 }
-
 
 }
 
