@@ -656,9 +656,10 @@ html {
 .container__pc {
   display: grid;
   position: relative;
-  margin-left: 73px;
+  margin-left: 2px;
   top: 190px;
   grid-template-columns: 35% 33%;
+
 }
 
 /* .container__cel{
@@ -675,8 +676,6 @@ html {
 .background__for {
   display: grid;
   position: absolute;
-  justify-content: center;
-  justify-items: end;
   align-items: center;
   margin-top: 80px;
   margin-left: 160px;
@@ -1181,4 +1180,45 @@ textarea::placeholder{
   height: 32px;
   margin-top: 70px;
 }
+/* Computer & Smartphone */
+
+.spect__pc{
+  width: 274%;
+}
+.spect__cel{
+  width: 168%;
+  margin: 65px;
+  top: 0%;
+}
+#blur__blue{
+  width: 325px;
+  height: 168px;
+  top: 1px;
+
+}
+#blur__violet{
+  width: 154px;
+  height: 99px;
+  filter: blur(80px);
+  top: 32px;
+  left: -174px;
+
+}
+#blur__rose{
+    width: 187.764px;
+    height: 208.938px;
+    filter: blur(150px);
+    left: -200px;
+    transform: rotate(327deg)
+    
+}
+#blur__white{
+  width: 197px;
+  height: 56px;
+  filter: blur(44px);
+  left: -106px;
+  top: 99px;
+  transform: none;
+}
+
 }
