@@ -234,7 +234,7 @@ html {
 }
 
 .header .subline__title {
-  height: 240px;
+  height: 175px;
   color: #FFF;
   text-align: center;
   font-family: 'Montserrat';
@@ -242,14 +242,10 @@ html {
   font-style: normal;
   font-weight: 900;
   line-height: 120%;
-  margin-top: 50px;
 }
 
 
 .line__center .par__txt {
-  text-align: center;
-  height: 120.235px;
-  height: 145.439px;
   color: #FFFFFF;
   text-align: center;
   font-family: 'Montserrat';
@@ -257,6 +253,7 @@ html {
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.5px;
+  height: 140px;
 }
 
 .stars {
@@ -284,16 +281,16 @@ html {
 
 
 .container {
+  display: flex;
   position: relative;
   width: 69, 875rem;
   height: 37, 9375rem;
-  /* width: 1118px;
-    height: 607px; */
   background-color: #1A1B23;
-
   text-align: center;
   border-radius: 24px;
   flex-direction: column;
+  justify-content: end;
+  align-items: center;
 
 }
 
@@ -502,13 +499,14 @@ html {
   justify-items: center;
   justify-content: center;
   align-items: center;
-  top: 710px;
+  top: 538px;
 }
 
 #circle__blurP {
   position: absolute;
-  width: 1100px;
-  height: 749px;
+    position: absolute;
+    width: 1400px;
+    height: 921px;
   filter: blur(175px);
   margin-left: 300px;
 
@@ -518,7 +516,7 @@ html {
 #circle__blurB {
   position: absolute;
   width: 1590px;
-  height: 830px;
+  height: 921px;
   border-radius: 231px;
   filter: blur(175px);
   margin-left: -33px;
@@ -774,9 +772,8 @@ html {
 
 .line__inf {
   height: 1px;
-  width: 899px;
+  width: 76%;
   border: 0;
-  margin-left: 235px;
 
   background-image: linear-gradient(to right, rgba(24, 200, 255, 1), rgba(147, 84, 254, 1));
 }
@@ -1084,36 +1081,11 @@ input:-webkit-autofill {
   }
 
   .container {
-    width: 85%;
-    height: 5%;
+    width: 89%;
   }
 }
-  @media screen and (max-width: 1000px) {
-    .not__grid {
-      display: none;
-    }
-
-    .blur__grid {
-      display: none;
-    }
-
-    .container__item {
-      grid-template-columns: none;
-    }
+@media screen and (max-width: 900px) {
   
-    #circle__blurP {
-      width: 343px;
-      height: 900px;
-      margin-left: 0;
-    }
-  #circle__blurB {
-    width: 410px;
-    height: 1036px;
-
-  }
-}
-  @media screen and (max-width: 900px) {
-
     /* COntainer formulario */
     .container__dp {
       width: 375px;
@@ -1190,7 +1162,7 @@ input:-webkit-autofill {
       border: 0.5px solid #FFF;
       background: rgba(0, 0, 0, 0.00);
     }
-
+    
     .input__form {
       background-color: transparent;
       color: #FFF;
@@ -1216,7 +1188,7 @@ input:-webkit-autofill {
     }
 
     /* Computer & Smartphone */
-
+    
     .spect__pc {
       width: 274%;
     }
@@ -1226,7 +1198,7 @@ input:-webkit-autofill {
       margin: 65px;
       top: 0%;
     }
-
+    
     #blur__blue {
       width: 325px;
       height: 168px;
@@ -1260,28 +1232,75 @@ input:-webkit-autofill {
       transform: none;
     }
   }
-
-
-  @media screen and (max-width: 760px) {
-    .txt__med {
-      font-size: 25px;
+  @media screen and (max-width: 1000px) {
+    .not__grid {
+      display: none;
     }
 
-    .icons__fmk {
-      width: 66px;
-      height: 74px;
-      position: relative;
-      top: -80px;
+    .blur__grid {
+      display: none;
     }
 
-    .container__water {
-      margin-top: -160px;
-      grid-template-columns: 75% 93%;
-      grid-gap: 1px;
+    .container__item {
+      grid-template-columns: none;
     }
-
-    .swiper {
-      width: 90%;
-      height: 115px;
+  
+    #circle__blurP {
+      width: 343px;
+      height: 900px;
+      margin-left: 0;
     }
+  #circle__blurB {
+    width: 410px;
+    height: 1036px;
   }
+  /* Carrossel */
+  .txt__med {
+    font-size: 25px;
+  }
+
+  .icons__fmk {
+    width: 66px;
+    height: 74px;
+    position: relative;
+    top: -80px;
+  }
+
+  .container__water {
+    margin-top: -160px;
+    grid-template-columns: 75% 93%;
+    grid-gap: 1px;
+  }
+
+  .swiper {
+    width: 90%;
+    height: 115px;
+  }
+}
+@media screen and (max-width: 700px) { 
+.par__txt{
+  font-size: 8px;
+}
+.title__page{
+  font-size: 36px;
+}
+
+.header .subline__title{
+  font-size: 40px;
+  position: relative;
+  top: 50px;
+}
+h2{
+  font-size: 36px;
+}
+.line__center .par__txt {
+  font-size: 20px;
+}
+.container__title {
+  font-size: 17px;
+  margin-top: 15px;
+} 
+
+}
+  
+
