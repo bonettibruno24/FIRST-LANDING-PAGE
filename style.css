@@ -56,10 +56,9 @@ html {
 /* Barra de tarefas (Pai) */
 .navbar {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1440px;
-  margin: 0 auto;
+}
+.navigation{
+  width: 65%;
 }
 
 .navigation .navigation__link {
@@ -73,26 +72,28 @@ html {
 }
 
 .navbar__buttons {
-  display: flex;
-  gap: 10px;
-  font-weight: 700;
-  width: 285px;
-  height: 45px;
-
-
+    display: flex;
+    height: 114px;
+    gap: 24px;
+    font-weight: 700;
+    width: 49%;
+    justify-content: end;
+    align-items: center;
 }
 
 .button {
   display: flex;
-  width: 170px;
-  font-size: 13px;
-  border: none;
-  color: #01C3CF;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  cursor: pointer;
-  align-items: center;
-  padding-left: 23px;
+    width: 170px;
+    font-size: 13px;
+    border: none;
+    color: #01C3CF;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    align-items: center;
+    padding-left: 23px;
+    height: 50%;
+
 }
 
 .button::before {
@@ -154,16 +155,17 @@ html {
 
 
 .button__login {
-  width: 30%;
+  width: 118px;
   display: flex;
-  font-size: 13px;
-  border: none;
+  font-size: 15px;
   color: #01C3CF;
   text-align: center;
   backdrop-filter: blur(10px);
   cursor: pointer;
   align-items: center;
-  padding-left: 25px;
+  justify-content: center;
+  height: 58px;
+
 }
 
 .button__login::before {
@@ -254,6 +256,7 @@ html {
   line-height: 120%;
   letter-spacing: 0.5px;
   height: 140px;
+  position: relative;
 }
 
 .stars {
@@ -504,12 +507,10 @@ html {
 
 #circle__blurP {
   position: absolute;
-    position: absolute;
-    width: 1400px;
-    height: 921px;
+  width: 1264px;
+  height: 794px;
   filter: blur(175px);
-  margin-left: 300px;
-
+  margin-left: 268px;
   background: linear-gradient(180deg, rgba(0, 194, 255, 0.00) 0%, #FF29C3 100%);
 }
 
@@ -978,10 +979,11 @@ input:-webkit-autofill {
   grid-gap: 23px;
   grid-template-columns: 14% 65% 12% 17% 11%;
 }
-
+.openbtn{
+  display: none;
+}
 .logotype__web {
-  width: 100%;
-  height: 100%;
+  width:100%;
 }
 
 .copy__auth {
@@ -1052,15 +1054,8 @@ input:-webkit-autofill {
     left: -96px;
   }
 
-  .logotype__web {
-    display: grid;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    height: 100%;
-    top: -170%;
-
-
+  .logotype__header {
+    width: 80%;
   }
 
   .copy__auth {
@@ -1083,6 +1078,12 @@ input:-webkit-autofill {
   .container {
     width: 89%;
   }
+  .logotype__web {
+    width: 43%;
+    position: absolute;
+    top: -150%;
+    left: 60px;
+}
 }
 @media screen and (max-width: 900px) {
   
@@ -1166,8 +1167,6 @@ input:-webkit-autofill {
     .input__form {
       background-color: transparent;
       color: #FFF;
-
-
     }
 
     input::placeholder {
@@ -1233,6 +1232,21 @@ input:-webkit-autofill {
     }
   }
   @media screen and (max-width: 1000px) {
+    body{
+      background-image: url(images/svgFooter/iPhone\ 8\ Plus\ -\ 1.svg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+    .header .subline__title{
+      font-size: 40px;
+      position: relative;
+      top: 75px;
+    }
+  
     .not__grid {
       display: none;
     }
@@ -1249,11 +1263,22 @@ input:-webkit-autofill {
       width: 343px;
       height: 900px;
       margin-left: 0;
+      background: none;
     }
   #circle__blurB {
-    width: 410px;
-    height: 1036px;
-  }
+    width: 892px;
+    height: 900px;
+    border-radius: 654px;
+    background: linear-gradient(194deg, #00C2FF00, #17C8FFEF, #FF29C3);
+    filter: blur(291px);
+    top: -278px;
+    }
+    .navbar{
+      display: flex;	
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   /* Carrossel */
   .txt__med {
     font-size: 25px;
@@ -1276,7 +1301,48 @@ input:-webkit-autofill {
     width: 90%;
     height: 115px;
   }
+  .item__list {
+    margin: 80px;
+    grid-gap: 35px;
+    margin-top: 41px;
 }
+.container__title {
+  font-size: 17px;
+  margin-top: 15px;
+} 
+.container__box{
+  border-radius: 25px;
+  border: 2px solid;
+}
+li{
+  display: none;
+}
+.navbar__buttons{
+  display: none;
+}
+
+.line__center .par__txt {
+  font-size: 20px;
+  margin: 44px;
+  margin-top: 10px;
+}
+.logocontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.openbtn {
+  display: flex;
+  position: absolute;
+  left: 3%;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+}
+
+
+  }
 @media screen and (max-width: 700px) { 
 .par__txt{
   font-size: 8px;
@@ -1284,23 +1350,14 @@ input:-webkit-autofill {
 .title__page{
   font-size: 36px;
 }
-
-.header .subline__title{
-  font-size: 40px;
-  position: relative;
-  top: 50px;
-}
 h2{
   font-size: 36px;
 }
-.line__center .par__txt {
-  font-size: 20px;
 }
-.container__title {
-  font-size: 17px;
-  margin-top: 15px;
-} 
-
+@media screen and (max-width: 500px){
+  body{
+    background-image: url(images/svgFooter/iPhone\ 8\ Plus\ -\ 1.svg);
+    background-size: cover;
 }
-  
+}
 
