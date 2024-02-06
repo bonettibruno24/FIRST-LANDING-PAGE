@@ -9,6 +9,7 @@
     <link rei="stylehest" href="../AULA 10/portifolio.html">
     <link type="text/css" rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <title>Landing Page</title>
@@ -18,15 +19,13 @@
 <body>
     <!-- Barra de tarefas -->
     <nav class="navbar">
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+        <div>
+            <button class="openbtn">☰</button>
+    </div>
+        <div>
+            <h1 class="color">amigos</h1>
         </div>
         <div class="logocontainer">
-            <button class="openbtn" onclick="openNav()">☰</button>
             <img src="/images/logotipo.svg" class="logotype__header">
         </div>
         <ul class="navigation">
@@ -54,13 +53,13 @@
     <section class="header">
         <div class="subline__title">
             <h1 class="title__page">Desenvolvimento</h1>
-            <h2 class="title__sec">de <span style="color:#00EFF9"> Software</span></h2>
+            <h2 class="title__sec">de <span style="color:#00EFF9"> Softwares</span></h2>
         </div>
 
         <div class="line__center">
-            <p class="par__txt">A empresa consiste em desenvolver softwares, landing pages com melhor interaçãoe
-                visual ao cliente. Além disso, trazendo inovações tecnológicas no mercado de trabalho.</p>
-            <div>
+            <p class="par__txt">A empresa consiste no desenvolvimento de softwares, landing pages com melhor interaçãoe
+                visual ao cliente. Além disso, trazendo idéias com inovações tecnológicas para dentro do seu projeto.</p>
+        <div>
     </section>
 
 
@@ -243,8 +242,6 @@
             </div>
         </footer>
     </section>
-
-
-
-
+   <script src="./sidebar.js"></script>
+</body>
 </html>
