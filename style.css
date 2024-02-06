@@ -27,9 +27,6 @@ body {
   overflow: hidden;
 }
 
-/* @media screen and (max-width: 768px){
- 
-  } */
 
 ul {
   display: flex;
@@ -56,6 +53,9 @@ html {
 /* Barra de tarefas (Pai) */
 .navbar {
   display: flex;
+  margin-left: -10%;
+  justify-content: center;
+  align-items: center;
 }
 .navigation{
   width: 65%;
@@ -68,7 +68,6 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
-  /* 18px */
 }
 
 .navbar__buttons {
@@ -506,12 +505,12 @@ html {
 }
 
 #circle__blurP {
-  position: absolute;
-  width: 1264px;
-  height: 794px;
-  filter: blur(175px);
-  margin-left: 268px;
-  background: linear-gradient(180deg, rgba(0, 194, 255, 0.00) 0%, #FF29C3 100%);
+position: absolute;
+    width: 1264px;
+    height: 794px;
+    filter: blur(175px);
+    margin-left: 268px;
+    background: linear-gradient(180deg, rgba(0, 194, 255, 0.00) 0%, #FF29C3 100%);
 }
 
 #circle__blurB {
@@ -982,7 +981,7 @@ input:-webkit-autofill {
 .openbtn{
   display: none;
 }
-.logotype__web {
+.logotype__header {
   width:100%;
 }
 
