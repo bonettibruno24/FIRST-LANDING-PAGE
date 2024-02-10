@@ -34,7 +34,7 @@ ul {
   align-items: center;
   color: #FFFFFF;
   font-family: 'Montserrat';
-  gap: 91px;
+  gap: 60px;
   right: 200px;
   font-size: 18px;
   font-style: normal;
@@ -64,7 +64,7 @@ html {
 .navigation .navigation__link {
   color: #FFF;
   font-family: 'Montserrat';
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
@@ -914,7 +914,6 @@ input {
 .button__send {
   display: flex;
   justify-content: center;
-  margin-top: 300px;
 }
 
 input:-webkit-autofill {
@@ -1024,7 +1023,9 @@ input:-webkit-autofill {
 
   background: linear-gradient(180deg, rgba(24, 75, 255, 0.00) 0%, rgba(23, 74, 255, 0.60) 100%);
 }
-
+.logotype__web {
+  width: 90%;
+}
 /* Responsividade a baixo */
 @media screen and (max-width: 1100px) {
   /* footer */
@@ -1178,6 +1179,7 @@ input:-webkit-autofill {
     .input__form {
       background-color: transparent;
       color: #FFF;
+      font-size: 14px;
     }
 
     input::placeholder {
@@ -1404,6 +1406,13 @@ li{
 h2{
   font-size: 31px;
 }
+.swiper-button-next::after{
+  font-size: 20px !important;
+}
+.swiper-button-prev::after{
+  font-size: 20px !important;
+}
+
 }
 @media screen and (max-width: 500px){
   body{
