@@ -1325,6 +1325,7 @@ input:-webkit-autofill {
 .container__box{
   border-radius: 25px;
   border: 2px solid;
+  padding: 45px 10px 25px 10px;
 }
 li{
   display: none;
