@@ -49,6 +49,25 @@ html {
   overflow-y: scroll;
 
 }
+/* largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #3b3b3b;
+}
+
+/* cor da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+}
+
+/* arredondamento das bordas da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+}
 
 /* Barra de tarefas (Pai) */
 .navbar {
@@ -389,8 +408,6 @@ html {
 
 .button__container {
   display: flex;
-  justify-content: center;
-
 }
 
 .btn__contact {
@@ -1028,6 +1045,107 @@ input:-webkit-autofill {
 }
 /* Responsividade a baixo */
 @media screen and (max-width: 1100px) {
+    /* COntainer formulario */
+    .container__dp {
+      width: 45rem;
+      height: 480.84px;
+
+    }
+
+    .info_-title {
+      font-size: 13px;
+      margin-top: 28px;
+    }
+
+    .line__inf2 {
+      display: inline-flex;
+      width: 80%;
+      height: 0.5px;
+      transform: rotate(179.995deg);
+      margin: 0;
+    }
+
+    .ask__inf {
+      font-size: 15px;
+      margin-top: 35px;
+    }
+
+    .containers__data {
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      width: 130%;
+      grid-template-columns: 30% 30%;
+      column-gap: 1.5%;
+      margin-top: 5%;
+      margin-left: -16%;
+
+    }
+
+    #first__name {
+      width: 100%;
+      height: 31.723px;
+      border: 0.4px solid #ffffff;
+      border-radius: 25px 0px 3px 0px;
+      
+    }
+
+    #sec__name {
+      width: 100%;
+      height: 31.723px;
+      border-radius: 0px 27px 0px 3px;
+      border: 0.5px solid #FFF;
+      background: rgba(0, 0, 0, 0.00);
+
+    }
+
+    #data__user {
+      width: 100%;
+      height: 31.723px;
+      border-radius: 0px 3px 3px 0px;
+      border: 0.5px solid #FFF;
+      background: rgba(0, 0, 0, 0.00);
+    }
+
+    #subject__user {
+      width: 205%;
+      height: 34.191px;
+      border-radius: 0px 2px 27px 27px;
+      border: 0.5px solid #FFF;
+    }
+
+    #msg__user {
+      position: absolute;
+      left: 20%;
+      top: -240%;
+      justify-content: center;
+      width: 62%;
+      height: 123.266px;
+      border-radius: 30px;
+      border: 0.5px solid #FFF;
+      background: rgba(0, 0, 0, 0.00);
+  }
+    }
+    
+    .input__form {
+      background-color: transparent;
+      color: #FFF;
+      font-size: 10px;
+    }
+
+    input::placeholder {
+
+      font-size: 9px;
+      font-weight: 400;
+    }
+
+    textarea::placeholder {
+      font-size: 9px;
+      font-weight: 400;
+    }
+
+
   /* footer */
 
   .line__white {
@@ -1096,107 +1214,9 @@ input:-webkit-autofill {
   color: white;
   z-index: 999999 !important;
 }
-}
+
 @media screen and (max-width: 900px) {
   
-    /* COntainer formulario */
-    .container__dp {
-      width: 375px;
-      height: 480.84px;
-
-    }
-
-    .info_-title {
-      font-size: 13px;
-      margin-top: 28px;
-    }
-
-    .line__inf2 {
-      width: 299.629px;
-      height: 0.5px;
-      transform: rotate(179.995deg);
-      position: absolute;
-      left: -47px;
-      margin-top: 15px;
-    }
-
-    .ask__inf {
-      font-size: 11px;
-      margin-top: 35px;
-    }
-
-    .containers__data {
-      position: absolute;
-      left: 13px;
-      column-gap: 40px;
-      width: 255px;
-    }
-
-    #first__name {
-      width: 158px;
-      height: 31.723px;
-      border: 0.4px solid #ffffff;
-      border-radius: 25px 0px 3px 0px;
-    }
-
-    #sec__name {
-      width: 158px;
-      height: 31.723px;
-      border-radius: 0px 27px 0px 3px;
-      border: 0.5px solid #FFF;
-      background: rgba(0, 0, 0, 0.00);
-
-    }
-
-    #data__user {
-      width: 159px;
-      height: 31.723px;
-      border-radius: 0px 3px 3px 0px;
-      border: 0.5px solid #FFF;
-      background: rgba(0, 0, 0, 0.00);
-    }
-
-    #subject__user {
-      width: 323px;
-      height: 34.191px;
-      border-radius: 0px 2px 27px 27px;
-      border: 0.5px solid #FFF;
-    }
-
-    #msg__user {
-      position: absolute;
-      margin-top: 286px;
-      margin-left: -17px;
-      width: 316px;
-      height: 120.266px;
-
-
-      border-radius: 30px;
-      border: 0.5px solid #FFF;
-      background: rgba(0, 0, 0, 0.00);
-    }
-    
-    .input__form {
-      background-color: transparent;
-      color: #FFF;
-      font-size: 14px;
-    }
-
-    input::placeholder {
-
-      font-size: 9px;
-      font-weight: 400;
-    }
-
-    textarea::placeholder {
-      font-size: 9px;
-      font-weight: 400;
-    }
-
-    .bn632-hover {
-      width: 194px;
-      height: 38px;
-    }
 
     /* Computer & Smartphone */
     
@@ -1326,6 +1346,7 @@ input:-webkit-autofill {
   border-radius: 25px;
   border: 2px solid;
   padding: 45px 10px 25px 10px;
+  width: 100%;
 }
 li{
   display: none;
@@ -1394,7 +1415,10 @@ li{
   font-size: 36px;
   margin-left: 50px;
 }
-
+.bn632-hover {
+  width: 194px;
+  height: 38px;
+}
 
   }
 @media screen and (max-width: 700px) { 
@@ -1420,5 +1444,15 @@ h2{
     background-image: url(images/svgFooter/iPhone\ 8\ Plus\ -\ 1.svg);
     background-size: cover;
 }
+}
+#quote{
+  font-size:44px;
+  line-height:50px;
+  color:#dedede;
+}
+
+button {
+  padding:10px;
+  margin: 20px 0;
 }
 
