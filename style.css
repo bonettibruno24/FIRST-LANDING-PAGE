@@ -47,7 +47,6 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
   overflow-y: scroll;
-
 }
 /* largura da barra de rolagem */
 ::-webkit-scrollbar {
@@ -67,6 +66,9 @@ html {
 /* arredondamento das bordas da barra de rolagem */
 ::-webkit-scrollbar-thumb {
   border-radius: 15px;
+}
+.box__data, .box__data1, .box__data2, .box__data3 {
+  visibility: hidden;
 }
 
 /* Barra de tarefas (Pai) */
@@ -676,12 +678,6 @@ position: absolute;
 
 }
 
-/* .container__cel{
-  position: relative;
-  right: 260px;
-  top: 200px;
-
-} */
 .spect__cel {
   position: relative;
   top: 197px;
