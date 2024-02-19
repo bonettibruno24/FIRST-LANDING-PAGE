@@ -1148,78 +1148,10 @@ input:-webkit-autofill {
 
   /* footer */
 
-  .line__white {
-    left: 5%;
-  }
-
-  .icon__social {
-    max-width: 20px;
-  }
-
-  .container__svg {
-    left: 30%;
-    gap: 25px;
-    top: 26px;
-  }
-
-
-  .container__logo {
-    text-align: center;
-    grid-template-columns: 215px;
-    grid-gap: 8px;
-    top: -25px;
-    left: -96px;
-  }
-
-  .logotype__header {
-    width: 80%;
-    position: relative;
-    left: 8%;
-  }
-
-  .copy__auth {
-    font-size: 8px;
-    position: relative;
-    top: 87px;
-
-
-  }
-
-  .terms__grid {
-    font-size: 10px;
-  }
-
-  #blur__footer {
-    height: 103%;
-    margin-top: -80px;
-  }
-
-  .container {
-    width: 89%;
-    margin-top: -2%;
-  }
-  .logotype__web {
-    width: 43%;
-    position: absolute;
-    top: -150%;
-    left: 60px;
-}
-.color{
-  display: none;
-  color: white;
-  z-index: 999999 !important;
-}
-.color .active{
-  display: flex;
-  color: white;
-  z-index: 999999 !important;
-}
 
 @media screen and (max-width: 900px) {
   
-
     /* Computer & Smartphone */
-    
     .spect__pc {
       width: 274%;
     }
@@ -1264,6 +1196,72 @@ input:-webkit-autofill {
     }
   }
   @media screen and (max-width: 1000px) {
+    .line__white {
+      left: 5%;
+    }
+  
+    .icon__social {
+      max-width: 20px;
+    }
+  
+    .container__svg {
+      left: 30%;
+      gap: 25px;
+      top: 26px;
+    }
+  
+  
+    .container__logo {
+      text-align: center;
+      grid-template-columns: 215px;
+      grid-gap: 8px;
+      top: -25px;
+      left: -96px;
+    }
+  
+    .logotype__header {
+      width: 80%;
+      position: relative;
+      left: 8%;
+    }
+  
+    .copy__auth {
+      font-size: 8px;
+      position: relative;
+      top: 87px;
+  
+  
+    }
+  
+    .terms__grid {
+      font-size: 10px;
+    }
+  
+    #blur__footer {
+      height: 103%;
+      margin-top: -80px;
+    }
+  
+    .container {
+      width: 89%;
+      margin-top: -2%;
+    }
+    .logotype__web {
+      width: 43%;
+      position: absolute;
+      top: -150%;
+      left: 60px;
+  }
+  .color{
+    display: none;
+    color: white;
+    z-index: 999999 !important;
+  }
+  .color .active{
+    display: flex;
+    color: white;
+    z-index: 999999 !important;
+  }
     body{
       background-image: url(images/svgFooter/iPhone\ 8\ Plus\ -\ 1.svg);
       background-size: cover;
@@ -1445,14 +1443,5 @@ h2{
     background-size: cover;
 }
 }
-#quote{
-  font-size:44px;
-  line-height:50px;
-  color:#dedede;
-}
 
-button {
-  padding:10px;
-  margin: 20px 0;
-}
 
