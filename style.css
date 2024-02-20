@@ -727,13 +727,26 @@ position: absolute;
   position: absolute;
   width: 121px;
   height: 420px;
-  left: 10px;
+  left: -37px;
   filter: blur(90px);
   top: 33px;
   transform: rotate(338deg);
   background: linear-gradient(95deg, rgba(24, 75, 255, 0.00) 0%, #FFF 100%);
-
+  overflow: hidden;
+    white-space: nowrap;
+    animation: sanfona 1.5s infinite alternate;
 }
+
+@keyframes sanfona {
+    0% {
+        width: 100px;
+    }
+    100% {
+        width: 150px;
+    }
+}
+
+
 
 
 
