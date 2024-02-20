@@ -70,6 +70,29 @@ html {
 .box__data, .box__data1, .box__data2, .box__data3 {
   visibility: hidden;
 }
+#moon__float {
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+.moon__float {
+  animation: float 3s infinite;
+  transform-style: preserve-3d;
+
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+
 
 /* Barra de tarefas (Pai) */
 .navbar {
@@ -927,6 +950,7 @@ input {
 .button__send {
   display: flex;
   justify-content: center;
+  margin-left: -50px;
 }
 
 input:-webkit-autofill {

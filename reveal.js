@@ -33,5 +33,14 @@ window.addEventListener('scroll', function() {
     scrollPos = (document.body.getBoundingClientRect()).top;
 });
 
+ScrollReveal().reveal('#moon__float',  {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '40px',
+    afterReveal: function (el) {
+        el.classList.add('moon__float');
+    }
+});
+
 
 
