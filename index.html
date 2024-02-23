@@ -14,7 +14,6 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 
-
     <title>Landing Page</title>
     <!-- Estilo do Site-->
 </head>
@@ -22,18 +21,24 @@
 <body>
     <!-- Barra de tarefas -->
     <nav class="navbar">
-        <div>
-            <button class="openbtn">☰</button>
-        </div>
-        <div>
-            <h1 class="color">amigos</h1>
+        <div class="sidebar">
+            <button id="openbtn">☰</button>
+            <div class="sidebar-content">
+                <ul>
+                  <li><a href="#" class="">Blog</a></li>
+                  <li><a href="#" class="">Clientes</a></li>
+                  <li><a href="#" class="">Espaço</a></li>
+                  <li><a href="#" class="">Serviços</a></li>
+                  <li><a href="#" class="">Suporte</a></li>         
+                </ul>
+            </div>
         </div>
         <div class="logocontainer">
             <img src="/images/logotipo.svg" class="logotype__header">
         </div>
         <ul class="navigation">
-            <li class="navigation__link">Blog <img src="/images/Vector nav bar.svg"> </li>
-            <li class="navigation__link">Clientes <img src="/images/Vector nav bar.svg"> </li>
+            <li class="navigation__link">Blog<img src="/images/Vector nav bar.svg"> </li>
+            <li class="navigation__link">Clientes<img src="/images/Vector nav bar.svg"> </li>
             <li class="navigation__link">Espaço <img src="/images/Vector nav bar.svg"> </li>
             <li class="navigation__link">Serviços <img src="/images/Vector nav bar.svg"> </li>
             <lI class="navigation__link">Suporte <img src="/images/Vector nav bar.svg"> </lI>
