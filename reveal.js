@@ -25,6 +25,7 @@ leftguide.reveal('.box__data3',
     distance: '250px',
     duration: 2000
 })
+
 // Ativando a transição inversa quando estiver rolando a página para cima
 window.addEventListener('scroll', function() {
     if ((document.body.getBoundingClientRect()).top > scrollPos) {
