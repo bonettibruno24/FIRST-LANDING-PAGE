@@ -1360,7 +1360,6 @@ input:-webkit-autofill {
     height: 100%;
     top: 0;
     left: 0;
-    transition: transform 0.3s ease-in-out 0s;
 
 }
   .sidebar .active {
@@ -1378,6 +1377,7 @@ input:-webkit-autofill {
     z-index: 999;
     top: 0px;
     left: 0px;
+    width: 100%;
   }
 
 
@@ -1445,37 +1445,24 @@ input:-webkit-autofill {
 /* FIN ICON-MENU */
 
 
-  /* #openbtn {
-    display: flex;
-    width: 262%;
-    justify-content: end;
-    margin: 30px;
-    font-size: 30px;
-    background-color: transparent;
-    color: white;
-  } */
-
-
-
-
   .sidebar-content {
     display: none;
     position: absolute;
-    top: 40px;
-    right: 0;
-    bottom: 0;
-    left: 0;
     background-color: #f0f0f0;
+    z-index: 999;
   }
 
   .sidebar-content .active {
-    display: block;
+    display: flex;
     width: 100px;
-    padding: 0;
+    transition-delay: 10s to left;
   }
 
-  .sidebar-content li {
+  .sidebar-content .active li {
     padding: 10px;
+  } 
+  .sidebar-content li {
+    padding: 15px;
   }
   .sidebar-content ul{
     display: block;
