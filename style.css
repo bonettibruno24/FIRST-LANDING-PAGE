@@ -1364,7 +1364,7 @@ input:-webkit-autofill {
 }
   .sidebar .active {
     display: flex;
-        justify-content: center;
+    justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -1378,6 +1378,7 @@ input:-webkit-autofill {
     top: 0px;
     left: 0px;
     width: 100%;
+    transform: translate(0%, 0);
   }
 
 
@@ -1405,7 +1406,6 @@ input:-webkit-autofill {
 .bar {
   position: relative;
   height: var(--height-bar);
-  width: 100%;
   border-radius: .5rem;
   background-color: #ffffff;
 }
@@ -1446,20 +1446,17 @@ input:-webkit-autofill {
 
 
   .sidebar-content {
-    display: none;
     position: absolute;
-    background-color: #f0f0f0;
     z-index: 999;
+    transform-origin: 0% 0%;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transform: translate(-100%, 0);
   }
 
-  .sidebar-content .active {
-    display: flex;
-    width: 100px;
-    transition-delay: 10s to left;
-  }
 
   .sidebar-content .active li {
     padding: 10px;
+    transition: 3s;
   } 
   .sidebar-content li {
     padding: 15px;
@@ -1469,7 +1466,7 @@ input:-webkit-autofill {
   }
   .sidebar-content a{
     font-size: 13px;
-    color:#ffffff
+    color:#ffffff;
   }
 
  
